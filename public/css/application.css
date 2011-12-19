@@ -3,7 +3,36 @@ body {
   font-family: 'Georgia';
 }
 
-a {
-  text-decoration: none;
-  color: black;
+#top-section {
+  margin: -1em -1em -1em -1em;
+  background-color: #151B54;
+  height: 20em;
+}
+
+a.home {
+  margin-left: 3em;
+}
+
+#container {
+  width: 45em;
+  height: 15em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  background-color: #989898;
+}
+
+h2.generator_title {
+  font-size: 30.559px;
+}
+
+form label {
+  font-size: 18.887px;
+}
+
+p.password {
+  font-size: 49.444px;
 }
