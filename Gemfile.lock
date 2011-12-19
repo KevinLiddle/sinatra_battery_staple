@@ -1,0 +1,26 @@
+GIT
+  remote: git://github.com/sinatra/sinatra.git
+  revision: 48fdb6de17e9c74e044302b7cbf06e940ede6f26
+  specs:
+    sinatra (1.3.1)
+      rack (~> 1.3, >= 1.3.4)
+      rack-protection (~> 1.1, >= 1.1.2)
+      tilt (~> 1.3, >= 1.3.3)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    battery-staple (0.0.1)
+    haml (3.1.4)
+    rack (1.3.5)
+    rack-protection (1.1.4)
+      rack
+    tilt (1.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  battery-staple
+  haml
+  sinatra!

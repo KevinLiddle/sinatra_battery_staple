@@ -1,0 +1,9 @@
+%h2.generator_title Create a new password
+%form{:action => "generate", :method => "post"}
+  %label How many words should your password be?
+  %select{:name => "words"}
+    - for number in 2..5
+      %option= number
+  %input{:type => "submit", :name => "Submit"}
+%p.password
+  = password
