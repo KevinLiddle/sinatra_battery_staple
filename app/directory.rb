@@ -6,7 +6,7 @@ module Directory
     haml :home, :locals => {:password => ""}
   end
 
-  post "/generate" do
+  post "/" do
     password = RandomPassword.generate(params[:words].to_i)
     haml :home, :locals => {:password => password}
   end

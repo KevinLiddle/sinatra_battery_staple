@@ -1,6 +1,6 @@
 #container
   %h2.generator_title Get a password
-  %form{:action => "generate", :method => "post"}
+  %form{:url => "/", :method => "post"}
     %label How many words do you want your password to be?
     %select{:name => "words"}
       - for number in 2..5
