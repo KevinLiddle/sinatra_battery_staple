@@ -8,7 +8,7 @@ module Directory
 
   post "/" do
     password = RandomPassword.generate(params[:words].to_i)
-    haml :home, :locals => {:password => password}
+    haml :home, :locals => {:password => password, :num_words => params[:words].to_i}
   end
 
 end

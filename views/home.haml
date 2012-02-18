@@ -4,7 +4,7 @@
     %label How many words do you want your password to be?
     %select{:name => "words"}
       - for number in 2..5
-        %option= number
+        %option{:selected => number == locals[:num_words].to_i}= number
     %input{:type => "submit", :name => "Submit"}
   %p.password
-    = password
+    = locals[:password]
