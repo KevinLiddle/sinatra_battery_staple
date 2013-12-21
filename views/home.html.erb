@@ -1,0 +1,18 @@
+<div id="container">
+
+  <h2 class="generator_title">Get a password</h2>
+
+  <form url="/" method="get">
+    <label>How many words do you want your password to be?</label>
+    <select name="words">
+      <% for number in 2..5 %>
+        <option <%= number == locals[:num_words].to_i ? 'selected="true"' : nil %>><%= number %></option>
+      <% end %>
+    </select>
+
+    <input type="submit" name="Submit" />
+  </form>
+
+  <p class="password"><%= locals[:password] %></p>
+
+</div>

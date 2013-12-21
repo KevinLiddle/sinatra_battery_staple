@@ -1,5 +1,5 @@
 require "spec_helper"
-require "directory"
+require "application"
 
 describe "directory" do
 
@@ -10,7 +10,7 @@ describe "directory" do
   end
 
   it "generates a random password" do
-    RandomPassword.should_receive(:generate).with(4)
-    post "/", params = {:words => 4}
+    BatteryStaple.should_receive(:generate).with(4)
+    get "/", params = {:words => 4}
   end
 end

@@ -19,7 +19,8 @@ a.home {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10em;
+  margin-top: 8em;
+  padding: 1em;
   border-radius: 10px;
   -moz-border-radius: 10px;
   background-color: #989898;
@@ -35,5 +36,4 @@ form label {
 
 p.password {
   font-size: 49.444px;
-  padding-bottom: 1em;
 }
